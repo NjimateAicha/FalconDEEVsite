@@ -89,15 +89,15 @@ const Footer = (props) => {
                                     <h3>Newsletter</h3>
                                 </div>
                                 <p>Stay updated with the latest news, insights, and innovations from FalconDev!</p>
-                                // <form onSubmit={SubmitHandler}>
-                                //     <div className="input-1">
-                                //         <input type="email" className="form-control" placeholder="Email Address *"
-                                //             required/>
-                                //     </div>
-                                //     <div className="submit clearfix">
-                                //         <button type="submit"><i className="fi flaticon-send"></i></button>
-                                //     </div>
-                                // </form>
+                                 {/*<form onSubmit={SubmitHandler}>
+                                     <div className="input-1">
+                                         <input type="email" className="form-control" placeholder="Email Address *"
+                                             required/>
+                                     </div>
+                                     <div className="submit clearfix">
+                                         <button type="submit"><i className="fi flaticon-send"></i></button>
+                                     </div>
+                                  </form>*/}
                             </div>
                         </div>
                     </div>
