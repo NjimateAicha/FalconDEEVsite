@@ -28,7 +28,7 @@ const testimonial = [
     {
         id: '03',
         tImg: ts3,
-        Des: "Un grand merci à FalconDev pour le développement de notre application desktop. Leur expertise et réactivité ont été essentielles pour répondre à nos besoins. Nous sommes très satisfaits du résultat et recommandons vivement leurs services.",
+        Des: "Un grand merci à FalconDev pour le développement de notre application desktop. Leur expertise et réactivité ont été essentielles pour répondre à nos besoins. Nous sommes très satisfaits du résultat et recommandons vivement leurs services y.",
         Title: 'IchraQ Optique ',
         Sub: "Application desktop",
     }

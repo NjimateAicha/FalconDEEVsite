@@ -13,24 +13,23 @@ const testimonial = [
     {
         id: '01',
         tImg: ts1,
-        Des: "Satisfait du travail d'Aicha, qui a créé un site web conforme à toutes nos attentes. Elle a fait preuve de grande patience, a bien compris nos besoins et a été ouverte à toutes les révisions. Une collaboration agréable, et j'espère continuer à travailler avec elle sur de futurs projets",
-        Title: 'Ayoub Ait Ali',
-        Sub: "https://bayticare.fr/",
+        Des: "Working with FalconDev has been a transformative experience for our company. Their attention to detail and commitment to quality truly set them apart.",
+        Title: 'Fatima El Amrani',
+        Sub: "CEO, Innovatech",
+    },
+    {
+        id: '02',
+        tImg: ts2,
+        Des: "The team at FalconDev exceeded our expectations! Their innovative solutions and timely support have greatly enhanced our project outcomes.",
+        Title: 'Youssef Benkhalifa',
+        Sub: "Project Manager, Atlas Solutions",
     },
     {
         id: '03',
         tImg: ts3,
-        Des: "Travailler avec FalconDev a été une expérience exceptionnelle. Aicha a parfaitement compris nos besoins et livré un site web de grande qualité, répondant à toutes nos attentes.",
-        Title: 'Mohamed RizQi',
-        Sub: "https://Arfakvoyagr.com",
-    },
-    
-    {
-        id: '03',
-        tImg: ts3,
-        Des: "Un grand merci à FalconDev pour le développement de notre application desktop. Leur expertise et réactivité ont été essentielles pour répondre à nos besoins. Nous sommes très satisfaits du résultat et recommandons vivement leurs services.",
-        Title: 'IchraQ Optique ',
-        Sub: "Application desktop",
+        Des: "FalconDev has been instrumental in our growth. Their expertise and dedication to client success have made all the difference in our journey.",
+        Title: 'Amina Zahir',
+        Sub: "Co-Founder, Tech Solutions",
     }
 ]
 
