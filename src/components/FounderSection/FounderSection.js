@@ -5,94 +5,73 @@ import ReactPixel from 'react-facebook-pixel';
 
 const FounderSection = (props) => {
     return (
-        <section className={`founder-section section-padding ${props.tClass || ""}`}>
+        <section className={`founder-section ${props.tClass || ""}`}>
             <div className="container">
-                <div className="row align-items-center">
+                <div className="founder-wrapper">
 
+                    {/* HEADER */}
+                    <div className="founder-header text-center">
+                        <h1 className="founder-title">About the Founder</h1>
+                        <span className="team-badge">
+                            Founder-led team · Trusted collaborators
+                        </span>
+                    </div>
+                    <br></br>
                     {/* IMAGE */}
-                    <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
-                        <div className="founder-image">
-                            <img
-                                src={founderImg}
-                                alt="Aicha Njimate - Founder of FalconDeev"
-                                className="img-fluid"
-                            />
+                    <div className="founder-image text-center">
+                        <img
+                            src={founderImg}
+                            alt="Aicha Njimate - Founder of FalconDev"
+                            className="img-fluid"
+                        />
+                    </div>
+
+                    {/* TEXT */}
+                    <div className="founder-text text-center">
+                        <p>
+                            Hi, I’m <strong>Aicha Njimate</strong>, Founder of FalconDev.
+                            I work with a trusted network of designers, developers, and product
+                            specialists to deliver scalable web & mobile solutions with clarity,
+                            execution, and long-term impact.
+                        </p>
+
+                        <p className="founder-meta">
+                            <strong>Founder-led team</strong> · Web & Mobile · MVP & SaaS ·
+                            Based in Morocco · Working worldwide
+                        </p>
+                    </div>
+
+                    {/* SOCIAL */}
+                    <div className="founder-links text-center">
+                        <span>Connect with me on</span>
+                        <div className="social-inline">
+                            <a href="https://www.linkedin.com/in/aicha-njimate/" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
+                            </a>
+                            <span> · </span>
+                            <a href="https://www.instagram.com/njimate_aicha/" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                            </a>
                         </div>
                     </div>
 
-                    {/* CONTENT */}
-                    <div className="col-lg-7 col-md-12">
-                        <div className="founder-content">
-                            <div className="founder-card">
-
-                                <div className="section-title">
-                                    <h2>About the Founder</h2>
-                                </div>
-
-                                <p>
-                                    Hi, I’m <strong>Aicha Njimate</strong>, Founder of FalconDeev.
-                                    I help businesses build scalable web & mobile solutions with a
-                                    focus on clarity, execution, and long-term impact.
-                                </p>
-
-                                <h4 className="founder-mini">
-                                    Founder - Web & Mobile - MVP & SaaS - Based in Morocco - working worldwide
-                                </h4>
-
-                                {/* SOCIAL LINKS */}
-                                <br></br>
-
-                                <div className="founder-links">
-                                    <h5>
-                                        Connect with me on
-                                    </h5>
-                                    <br></br>
-
-                                    <h5 className="social-inline">
-                                        <b>
-                                            <a
-                                                href="https://www.linkedin.com/in/aicha-njimate/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <span>LinkedIn</span>
-                                            </a>
-                                        </b>
-                                        {" · "}
-                                        <b>
-                                            <a
-                                                href="https://www.instagram.com/njimate_aicha/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <span>Instagram</span>
-                                            </a>
-                                        </b>
-                                    </h5>
-                                </div>
-
-                                <br></br>
-
-                                {/* CTA */}
-                                <div className="btns">
-                                    <a
-                                        href="https://calendly.com/njimateaicha/30min"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="theme-btn"
-                                        onClick={() => ReactPixel.track('Schedule')}
-                                    >
-                                        Book a Free Call
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
+                    {/* CTA */}
+                    <div className="btns text-center">
+                        <a
+                            href="https://calendly.com/njimateaicha/30min"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="theme-btn"
+                            onClick={() => ReactPixel.track('Schedule')}
+                        >
+                            Book a Free Call
+                        </a>
                     </div>
 
                 </div>
             </div>
         </section>
+
     );
 };
 

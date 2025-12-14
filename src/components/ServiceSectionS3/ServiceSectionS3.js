@@ -13,7 +13,7 @@ const ClickHandler = () => {
 
 const ServiceSectionS3 = (props) => {
     return (
-        <section className="wpo-service-section-s4 section-padding">
+        <section className="wpo-service-section-s4 section-padding" id="services">
             <div className="container">
                 <SectionTitle subTitle={'Our Services'} Title={'What We Do?'} />
                 <div className="row">

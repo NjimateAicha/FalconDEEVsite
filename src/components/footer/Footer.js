@@ -15,7 +15,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         {/* Column 1: Brand */}
-                        <div className="col col-lg-6 col-md-4 col-sm-12 col-12">
+                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
                                     <img src={Logo} alt="logo" />
@@ -28,24 +28,23 @@ const Footer = (props) => {
                             </div>
                         </div>
 
-                        {/* Column 2: Quick Links */}
-                        {/* <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
+                        {/* Column 2: Services */}
+                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Quick Links</h3>
+                                    <h3>Services</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/">Home</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project">Portfolio</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                                    <li><a href="#services">Web Platform Development</a></li>
+                                    <li><a href="#services">Mobile App Engineering</a></li>
+                                    <li><a href="#services">SaaS MVP Development</a></li>
+                                    <li><a href="#services">UI/UX Product Design</a></li>
                                 </ul>
                             </div>
-                        </div> */}
+                        </div>
 
                         {/* Column 3: Contact & CTA */}
-                        <div className="col col-lg-6 col-md-4 col-sm-12 col-12">
+                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget newsletter-widget"> {/* Reusing widget class for styling */}
                                 <div className="widget-title">
                                     <h3>Contact Us</h3>
