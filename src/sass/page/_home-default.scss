@@ -499,7 +499,9 @@
 .wpo-cta-section {
     .wpo-cta-wrap {
         padding: 80px 85px;
-        background: url(../../images/cta-bg.jpg) no-repeat center center;
+        // background: url(../../images/cta-bg.jpg) no-repeat center center;
+       
+  background: none; 
         background-size: cover;
         border-radius: 6px;
 
@@ -571,11 +573,15 @@
             }
 
             .wpo-cta-btn {
-                flex-basis: 20%;
+                flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-                @media(max-width:1200px) {
-                    flex-basis: 100%;
-                }
+  @media (max-width: 1200px) {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
 
                 a {
                     display: inline-block;
@@ -588,6 +594,8 @@
                     max-width: 150px;
                     text-transform: uppercase;
                     background: $theme-primary-color;
+                     white-space: nowrap;      // ✅ empêche le retour à la ligne
+  max-width: none;  
 
                     @media(max-width:991px) {
                         border: 1px solid $white;

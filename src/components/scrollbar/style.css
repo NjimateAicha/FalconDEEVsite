@@ -1,32 +1,68 @@
 ul.smothscroll {
     position: fixed;
     bottom: 25px;
-    right:30px;
+    right: 30px;
     list-style: none;
     z-index: 99;
 }
+
+ul.smothscroll li {
+    margin-top: 10px;
+}
+
 ul.smothscroll a {
     background-color: rgba(255, 74, 23, 0.7);
     width: 45px;
     height: 45px;
     line-height: 45px;
-    border-radius:50%;
-    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
-    background-size: 200%,1px;
+    background-size: 200%, 1px;
     background-position: 0;
     border: 2px solid #ff4a17;
+    transition: all 0.3s ease;
 }
+
 ul.smothscroll a:hover {
     background-color: #ff4a17;
     color: #fff;
 }
 
-@media(max-width:767px){
+ul.smothscroll a i {
+    line-height: inherit;
+}
+
+ul.smothscroll a.whatsapp-btn {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+ul.smothscroll a.whatsapp-btn:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+}
+
+ul.smothscroll a.whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+@media(max-width:767px) {
     ul.smothscroll a {
         width: 30px;
         height: 30px;
         line-height: 25px;
+    }
+
+    ul.smothscroll a.whatsapp-btn svg {
+        width: 18px;
+        height: 18px;
     }
 }

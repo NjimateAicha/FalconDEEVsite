@@ -12,12 +12,19 @@ const CtaSection = (props) => {
                             <div className="wpo-cta-item">
                                 <div className="wpo-cta-text">
                                     <span>WE ARE HERE</span>
-                                    <h2>Tell us about your business,
-                                        we are ready to solve.</h2>
+                                    <h2>Have a project in mind?<br></br>
+                                        Let’s build it together.</h2>
                                 </div>
-                                <div className="wpo-cta-btn">
-                                    <Link to="/contact">Call us</Link>
-                                </div>
+                            
+                               <div className="wpo-cta-btn">
+  <a
+    href="https://calendly.com/njimateaicha/30min"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Book a Free Call
+  </a>
+</div>
                                 <Fade left>
                                     <div className="cta-shape">
                                         <svg width="325.000000pt" height="267.000000pt" viewBox="0 0 325.000000 267.000000"

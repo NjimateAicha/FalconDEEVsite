@@ -15,7 +15,7 @@ export default function Navbar3(props) {
 
   return (
     <div className={className}>
-        <Header3 hclass={props.hclass} Logo={props.Logo} topbarNone={props.topbarNone}/>
+      <Header3 hclass={props.hclass} Logo={props.Logo} topbarNone={props.topbarNone} simple={props.simple} />
     </div>
-  ); 
+  );
 }

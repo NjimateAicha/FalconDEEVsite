@@ -7,59 +7,24 @@ import { Link } from "react-router-dom";
 import SectionTitle2 from "../SectionTitle2/SectionTitle2";
 
 const settings = {
-    dots: false,
-    arrows: true,
-    speed: 1000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive: [
-        {
-            breakpoint: 1400,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 575,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
+  dots: false,
+  arrows: true,
+  infinite: true,
+  speed: 700,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  pauseOnHover: true,
+  swipeToSlide: true,
+  draggable: true,
+  responsive: [
+    { breakpoint: 1400, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+    { breakpoint: 575,  settings: { slidesToShow: 1, slidesToScroll: 1 } },
+  ],
 };
+
 
 
 const ClickHandler = () => {
@@ -70,14 +35,14 @@ const ProjectSection2 = (props) => {
     return (
         <section className={`wpo-project-section-s2 section-padding ${props.pClass}`}>
             <div className="container">
-                <SectionTitle2 subTitle={'OUR PORTFOLIO'} Title={'Successfull Work of Consoel'} />
+                <SectionTitle2 subTitle={'OUR PORTFOLIO'} Title={'Work That Delivers Result  '} />
             </div>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col col-xs-12 sortable-project">
-                        <div className="wpo-project-container project-slider owl-carousel">
+                        <div className="wpo-project-container project-slider">
                             <Slider {...settings}>
-                                {Projects.slice(0, 9).map((project, prj) => (
+                                {Projects.slice(0, props.limit ? props.limit : 9).map((project, prj) => (
                                     <div className="grid" key={prj}>
                                         <div className="wpo-project-item">
                                             <img src={project.pImg} alt="project" className="img img-responsive" />

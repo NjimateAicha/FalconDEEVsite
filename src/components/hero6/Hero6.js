@@ -17,15 +17,23 @@ const Hero6 = () => {
                                 <h5>Your Vision, Our Code.</h5>
                             </div>
                             <div className="slide-title">
-                                <h2> Transforming Ideas <b><span>Into</span> Digital Reality.</b></h2>
+                                <h2> We help businesses <b><span>build scalable</span> web  & mobile solutions.</b></h2>
                             </div>
                             <div className="slide-text">
                                 <p>Let’s build your digital future today!</p>
                             </div>
                             <div className="clearfix"></div>
-                            <div className="btns">
-                                <Link to="/about" className="theme-btn">Explore More</Link>
-                            </div>
+                          <div className="btns">
+  <a
+    href="https://calendly.com/njimateaicha/30min"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="theme-btn"
+  >
+    Book a Free Call
+  </a>
+</div>
+
                         </div>
                     </div>
                 </div>

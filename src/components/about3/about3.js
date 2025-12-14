@@ -35,7 +35,19 @@ const About3 = (props) => {
                                         <h5>Perfect solutions for your business needs to drive success.</h5>
                                     </div>
                                 </div>
-                                <Link onClick={ClickHandler} className="theme-btn" to="/service">Our Services</Link>
+                                <div className="btns">
+  <a
+    href="https://calendly.com/njimateaicha/30min"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="theme-btn"
+  >
+    Book a Free Call
+  </a>
+</div>
+
+                                
+                                {/* <Link onClick={ClickHandler} className="theme-btn" to="/service">Our Services</Link> */}
                             </div>
                         </div>
                     </div>

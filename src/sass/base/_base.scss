@@ -1,18 +1,25 @@
 /* 1.1	Theme Reset Style */
 html {
     font-size: $base-font-size + px;
+    overflow-x: hidden;
+    width: 100%;
 }
+
 :root {
     scroll-behavior: unset;
 }
+
+
+
 body {
     font-family: $base-font;
-    color:$body-color;
+    color: $body-color;
     background-color: $body-bg-color;
     font-size: 15px;
     font-size: calc-rem-value(15);
     overflow-x: hidden;
-    @include media-query( 767px ) {
+
+    @include media-query(767px) {
         font-size: 14px;
     }
 }
@@ -49,7 +56,7 @@ a:hover {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -60,7 +67,7 @@ img{
     visibility: hidden;
 }
 
-.App{
+.App {
     overflow: hidden;
 }
 
@@ -81,51 +88,56 @@ img{
 .section-padding {
     padding: 120px 0;
 
-    @include media-query( 991px ) {
+    @include media-query(991px) {
         padding: 90px 0;
     }
-    @include media-query( 767px ) {
+
+    @include media-query(767px) {
         padding: 80px 0;
     }
 }
 
-.pt-120{
-    padding-top: 120px!important;
+.pt-120 {
+    padding-top: 120px !important;
 
-    @include media-query( 991px ) {
-        padding-top: 90px!important;
+    @include media-query(991px) {
+        padding-top: 90px !important;
     }
-    @include media-query( 767px ) {
-        padding-top: 80px!important;
-    }
-}
-.pt-175{
-    padding-top: 175px!important;
 
-    @include media-query( 991px ) {
-        padding-top: 125px!important;
-    }
-    @include media-query( 767px ) {
-        padding-top: 115px!important;
+    @include media-query(767px) {
+        padding-top: 80px !important;
     }
 }
 
-.pb-120{
-    padding-bottom: 120px!important;
+.pt-175 {
+    padding-top: 175px !important;
 
-    @include media-query( 991px ) {
-        padding-bottom: 90px!important;
+    @include media-query(991px) {
+        padding-top: 125px !important;
     }
-    @include media-query( 767px ) {
-        padding-bottom: 80px!important;
+
+    @include media-query(767px) {
+        padding-top: 115px !important;
     }
 }
 
-.section-bg{
+.pb-120 {
+    padding-bottom: 120px !important;
+
+    @include media-query(991px) {
+        padding-bottom: 90px !important;
+    }
+
+    @include media-query(767px) {
+        padding-bottom: 80px !important;
+    }
+}
+
+.section-bg {
     background: $section-bg-color;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -172,7 +184,7 @@ img{
         text-align: center;
         display: none;
 
-        @include media-query(767px)  {
+        @include media-query(767px) {
             font-size: 15px;
         }
     }
@@ -216,8 +228,8 @@ img{
 }
 
 .rotating {
-  -webkit-animation: rotating 5s alternate infinite;
-  animation: rotating 5s alternate infinite;
+    -webkit-animation: rotating 5s alternate infinite;
+    animation: rotating 5s alternate infinite;
 }
 
 
@@ -278,6 +290,7 @@ img{
 .mfp-with-zoom.mfp-ready .mfp-container {
     opacity: 1;
 }
+
 .mfp-with-zoom.mfp-ready.mfp-bg {
     opacity: 0.8;
 }
@@ -289,14 +302,10 @@ img{
 
 /*** for fancybox video ***/
 .fancybox-overlay {
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999 !important;
 }
 
 .fancybox-wrap {
-  z-index: 99999 !important;
+    z-index: 99999 !important;
 }
-
-
-
-

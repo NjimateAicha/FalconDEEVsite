@@ -11,13 +11,13 @@ const ClickHandler = () => {
     window.scrollTo(10, 0);
 }
 
-const ServiceSectionS3 = () => {
+const ServiceSectionS3 = (props) => {
     return (
         <section className="wpo-service-section-s4 section-padding">
             <div className="container">
                 <SectionTitle subTitle={'Our Services'} Title={'What We Do?'} />
                 <div className="row">
-                    {Services.map((service, srv) => (
+                    {Services.slice(0, props.limit ? props.limit : Services.length).map((service, srv) => (
                         <div className="col-lg-6 col-md-12 col-12" key={srv}>
                             <div className="wpo-service-item">
                                 <div className="wpo-service-text">

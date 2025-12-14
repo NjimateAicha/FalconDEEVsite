@@ -3,107 +3,79 @@ import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
 import shape from '../../images/ft-shape.png'
 
-
 const ClickHandler = () => {
     window.scrollTo(10, 0);
-}
-const SubmitHandler = (e) => {
-    e.preventDefault()
 }
 
 const Footer = (props) => {
     return (
-        <footer className="wpo-site-footer-s2">
+        <footer className="wpo-site-footer-s2" >
             <div className="wpo-upper-footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
+                        {/* Column 1: Brand */}
+                        <div className="col col-lg-6 col-md-4 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <img src={Logo} alt="logo"/>
+                                    <img src={Logo} alt="logo" />
                                 </div>
-                                <p>FalconDev specializes in innovative web, mobile, and desktop applications, along with business intelligence solutions. We empower businesses to thrive through technology and data-driven insights.</p>
-                                <ul>
-                                    <li>
-                                       
-                                        <a href="https://web.facebook.com/profile.php?id=61567033855025" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
-                                                <i className="ti-facebook"></i>
-                                            </a>
-
-                                    </li>
-                                    <li>
-                    
-                                        <a href="https://www.instagram.com/falcondeev?igsh=MTcyM2dpb2I5bDZ3Mw==" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
-                                        <i className="ti-instagram"></i>
-                                            </a>
-                                    </li>
-                                    <li>
-                                    <a href="https://www.youtube.com/@FalconDeev" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
-                                        <i className="ti-youtube"></i>
-                                            </a>
-                                       
-                                    </li>
-                                    <li>
-                                    <a href="https://www.linkedin.com/company/falcon-dev/?viewAsMember=true" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
-                                        <i className="ti-linkedin"></i>
-                                            </a>
-                                       
-                                    </li>
-                                </ul>
+                                <p>FalconDev builds scalable web, mobile, SaaS & MVP solutions for businesses worldwide.</p>
+                                <p style={{ marginTop: '10px', fontWeight: '500' }}>
+                                    <i className="ti-location-pin" style={{ color: '#ff7a00', marginRight: '5px' }}></i>
+                                    Casablanca, Morocco · Working worldwide
+                                </p>
                             </div>
                         </div>
-                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
+
+                        {/* Column 2: Quick Links */}
+                        {/* <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Company</h3>
+                                    <h3>Quick Links</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">About company</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Our services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project">Job opportunities</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget blog-widget">
-                                <div className="widget-title">
-                                    <h3>Recent Post</h3>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <h4><Link onClick={ClickHandler} to="/blog-single/1">What are the pros and cons of becoming a consultant?</Link></h4>
-                                        <span><i className="fi flaticon-calendar"></i> 10.02.2022</span>
-                                    </li>
-                                    <li>
-                                        <h4><Link onClick={ClickHandler} to="/blog-single/1">We are able to give truly independent advice</Link></h4>
-                                        <span><i className="fi flaticon-calendar"></i> 10.02.2022</span>
-                                    </li>
+                                    <li><Link onClick={ClickHandler} to="/">Home</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service">Services</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/project">Portfolio</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/about">About</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                 </ul>
                             </div>
                         </div> */}
-                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="widget newsletter-widget">
+
+                        {/* Column 3: Contact & CTA */}
+                        <div className="col col-lg-6 col-md-4 col-sm-12 col-12">
+                            <div className="widget newsletter-widget"> {/* Reusing widget class for styling */}
                                 <div className="widget-title">
-                                    <h3>Newsletter</h3>
+                                    <h3>Contact Us</h3>
                                 </div>
-                                <p>Stay updated with the latest news, insights, and innovations from FalconDev!</p>
-                                 {/*<form onSubmit={SubmitHandler}>
-                                     <div className="input-1">
-                                         <input type="email" className="form-control" placeholder="Email Address *"
-                                             required/>
-                                     </div>
-                                     <div className="submit clearfix">
-                                         <button type="submit"><i className="fi flaticon-send"></i></button>
-                                     </div>
-                                  </form>*/}
+                                <p style={{ marginBottom: '15px' }}>
+                                    <i className="ti-email" style={{ color: '#ff7a00', marginRight: '8px' }}></i>
+                                  falcondevvofficial@gmail.com
+                                </p>
+
+                                <div className="social-icons" style={{ marginBottom: '25px', display: 'flex', gap: '15px' }}>
+                                    <a href="https://www.linkedin.com/in/aicha-njimate/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '18px', border: '1px solid #ffffff40', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s' }}>
+                                        <i className="ti-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/njimate_aicha/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '18px', border: '1px solid #ffffff40', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s' }}>
+                                        <i className="ti-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div className="cta-button">
+                                    <a href="https://calendly.com/njimateaicha/30min" target="_blank" rel="noopener noreferrer" className="theme-btn" style={{ borderRadius: '30px', padding: '12px 30px', fontSize: '16px' }}>
+                                        Book a Free Call
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* Decorative Shapes */}
                 <div className="ft-shape">
-                    <img src={shape} alt="shape"/>
+                    <img src={shape} alt="shape" />
                 </div>
                 <div className="ft-shape-s1">
                     <svg width="254.000000pt" height="257.000000pt" viewBox="0 0 254.000000 257.000000"
@@ -122,23 +94,14 @@ const Footer = (props) => {
                     </svg>
                 </div>
             </div>
+
             <div className="wpo-lower-footer">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col col-lg-6 col-md-12 col-12">
+                        <div className="col-12 text-center">
                             <ul>
-                                <li>Copyright &copy; 2024 //  All Right Reserved by <Link onClick={ClickHandler} to="/">FalconDev</Link></li>
+                                <li>&copy; 2024 FalconDev. All rights reserved.</li>
                             </ul>
-                        </div>
-                        <div className="col col-lg-6 col-md-12 col-12">
-                            <div className="link">
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog">History</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Awards</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project-single">Leadership</Link></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
