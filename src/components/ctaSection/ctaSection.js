@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
+import ReactPixel from 'react-facebook-pixel';
 
 const CtaSection = (props) => {
     return (
@@ -15,16 +16,17 @@ const CtaSection = (props) => {
                                     <h2>Have a project in mind?<br></br>
                                         Let’s build it together.</h2>
                                 </div>
-                            
-                               <div className="wpo-cta-btn">
-  <a
-    href="https://calendly.com/njimateaicha/30min"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Book a Free Call
-  </a>
-</div>
+
+                                <div className="wpo-cta-btn">
+                                    <a
+                                        href="https://calendly.com/njimateaicha/30min"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => ReactPixel.track('Schedule')}
+                                    >
+                                        Book a Free Call
+                                    </a>
+                                </div>
                                 <Fade left>
                                     <div className="cta-shape">
                                         <svg width="325.000000pt" height="267.000000pt" viewBox="0 0 325.000000 267.000000"

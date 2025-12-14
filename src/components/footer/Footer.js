@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
 import shape from '../../images/ft-shape.png'
+import ReactPixel from 'react-facebook-pixel';
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -51,7 +52,7 @@ const Footer = (props) => {
                                 </div>
                                 <p style={{ marginBottom: '15px' }}>
                                     <i className="ti-email" style={{ color: '#ff7a00', marginRight: '8px' }}></i>
-                                  falcondevvofficial@gmail.com
+                                    falcondevvofficial@gmail.com
                                 </p>
 
                                 <div className="social-icons" style={{ marginBottom: '25px', display: 'flex', gap: '15px' }}>
@@ -64,7 +65,7 @@ const Footer = (props) => {
                                 </div>
 
                                 <div className="cta-button">
-                                    <a href="https://calendly.com/njimateaicha/30min" target="_blank" rel="noopener noreferrer" className="theme-btn" style={{ borderRadius: '30px', padding: '12px 30px', fontSize: '16px' }}>
+                                    <a href="https://calendly.com/njimateaicha/30min" target="_blank" rel="noopener noreferrer" className="theme-btn" style={{ borderRadius: '30px', padding: '12px 30px', fontSize: '16px' }} onClick={() => ReactPixel.track('Schedule')}>
                                         Book a Free Call
                                     </a>
                                 </div>

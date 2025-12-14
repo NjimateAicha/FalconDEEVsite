@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import HeaderTopbar2 from '../HeaderTopbar2/HeaderTopbar2'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import Logo from '../../images/logo-2.png'
+import ReactPixel from 'react-facebook-pixel';
 
 
 const Header3 = (props) => {
@@ -26,7 +27,7 @@ const Header3 = (props) => {
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <div className="mobail-menu">
-                                    <MobileMenu />
+                                    <MobileMenu simple={props.simple} />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-6">
@@ -83,6 +84,7 @@ const Header3 = (props) => {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="theme-btn"
+                                                onClick={() => ReactPixel.track('Schedule')}
                                             >
                                                 Book a Free Call
                                             </a>

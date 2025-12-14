@@ -5,6 +5,7 @@ import shape1 from '../../images/slider/shape-6.png'
 import shape2 from '../../images/slider/shape-7.png'
 import shape3 from '../../images/slider/LL.png'
 import Fade from 'react-reveal/Fade';
+import ReactPixel from 'react-facebook-pixel';
 
 const Hero6 = () => {
     return (
@@ -23,16 +24,17 @@ const Hero6 = () => {
                                 <p>Let’s build your digital future today!</p>
                             </div>
                             <div className="clearfix"></div>
-                          <div className="btns">
-  <a
-    href="https://calendly.com/njimateaicha/30min"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="theme-btn"
-  >
-    Book a Free Call
-  </a>
-</div>
+                            <div className="btns">
+                                <a
+                                    href="https://calendly.com/njimateaicha/30min"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="theme-btn"
+                                    onClick={() => ReactPixel.track('Schedule')}
+                                >
+                                    Book a Free Call
+                                </a>
+                            </div>
 
                         </div>
                     </div>
